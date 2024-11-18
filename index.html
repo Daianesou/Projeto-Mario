@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+    <div class="cabeçario">
+        <img src="./img/logo-header.png">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+        <div class="sobre-nos">
+            <img src="./img/logo.png" alt="imagem-mario" class="imagem-logo">
+            <p>Encanadores Mario e Luigi - resolvendo seus problemas com estilo</p>
+            <p>Voce ja se encontrou em uma situação com encanamento? Vazamentos
+                inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe,
+                porque estamos aqui para salvar o dia! Apresentamos a voces os encanadores mais famosos do Reino dos
+                cogumelos!
+            </p>
+
+            <button onclick="mostrarform()">ENTRE EM CONTATO</button>
+
+        </div>
+        <div>
+            <img src="./img/mario.png" alt="mario-luigi" class="mario-com-luigi">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5511826545154&text=ola,quero%20ajuda%20dos%20irmaos%20mario">
+        <img src="./img/whatsapp.png" alt="link-whatsapp" class="whatsapp">
+    </a>
+
+    <form class="fale-conosco" action="https://formcarry.com/s/MRUImPZLwm7" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui" name="duvidas"></textarea>
+        <button type="submit">Pedir orçamento</button>
+    </form>
+</body>
+<script src="scripts.js"></script>
+
+</html>
